@@ -25,7 +25,7 @@ public class Problema03 {
         
         for (fahrenheit = 20; fahrenheit <= 80; fahrenheit += 4) {
             celcius = (5/9.0) * (fahrenheit -32);
-            cadenaFinal = String.format("%s %.2f",
+            cadenaFinal = String.format("%s\n %.2f",
                     cadenaFinal
                     ,celcius);
         }
