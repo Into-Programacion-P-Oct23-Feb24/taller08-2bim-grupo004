@@ -15,12 +15,13 @@ public class Problema02 {
      */
     public static void main(String[] args) {
         int contador;
-        for (contador = 30; contador >= 10; contador--){
-            System.out.printf("%d-%d-%d-%d\n",contador,
-                    contador*2,
-                    contador*3,
-                    contador*4);
+        for (contador = 30; contador >= 10; contador--) {
+            System.out.printf("%d-%d-%d-%d\n", 
+                    contador,
+                    contador * 2,
+                    contador * 3,
+                    contador * 4);
         }
     }
-    
+
 }
