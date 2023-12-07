@@ -15,21 +15,23 @@ public class Problema04 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-       int lineas = 5;
-           
-           for (int i = 1; i <= lineas; i++){
-               for (int g = 1; g <= i; g++){
-               System.out.print("*");
-               }
-               System.out.println("");
-           }
-            for (int i = lineas - 1; i >= 1; i--){
-               for (int g = 1; g <= i; g++){
-               System.out.print("*");
-               }
-               System.out.println("");
-           }
-        
+       int contador;
+        String cadena = "";
+        String cadenaFinal = "";
+        String cadenaFi = "";
+        for (contador = 1; contador <= 5; contador++){
+            cadena = String.format("%s*",cadena);
+            cadenaFinal = String.format("%s%s\n",cadenaFinal,cadena);
+        }
+        cadena = "";
+        for (contador = 1; contador <= 5; contador++){
+            cadena = String.format("%s*",cadena);
+            cadenaFi = String.format("%s\n%s",cadena,
+                   cadenaFi);
+        }
+        System.out.printf("%s%s",cadenaFinal,cadenaFi);
     }
+        
+  }
     
-}
+
