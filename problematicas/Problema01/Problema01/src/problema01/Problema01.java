@@ -3,8 +3,10 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
 package problema01;
+
 import java.util.Scanner;
 import java.util.Locale;
+
 /**
  *
  * @author LAB.ELECT
@@ -31,7 +33,7 @@ public class Problema01 {
         int limite;
         System.out.println("Ingrese la catidad de jugadores");
         limite = entrada.nextInt();
-        for (contador = 1;contador <= limite; contador++){
+        for (contador = 1; contador <= limite; contador++) {
             System.out.println("Ingrese el nombre del jugador: ");
             entrada.nextLine();
             nombre = entrada.nextLine();
@@ -51,10 +53,10 @@ public class Problema01 {
                     posicion,
                     edad,
                     estatura);
-            cadenaEdad = String.format("%s%d ",cadenaEdad,edad);
+            cadenaEdad = String.format("%s%d ", cadenaEdad, edad);
         }
-        promedioEdad = (double)sumaEdades / limite;
-        promedioEstatura = (double)sumaEstaturas / limite;
+        promedioEdad = (double) sumaEdades / limite;
+        promedioEstatura = (double) sumaEstaturas / limite;
         cadenaReporte = String.format("Listado de Jugadores\n%sListado de "
                 + "Edades %s\nPromedio de edades: %.1f Promedio de estaturas: "
                 + "%.2f\n",
@@ -64,5 +66,5 @@ public class Problema01 {
                 promedioEstatura);
         System.out.printf("%s\n", cadenaReporte);
     }
-    
+
 }
